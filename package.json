@@ -1,0 +1,46 @@
+{
+  "name": "minecraft-guessing-game",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "generate:data": "node scripts/generate-catalog.mjs",
+    "generate:transformations": "node scripts/generate-transformations.mjs",
+    "generate:quiz": "node scripts/generate-quiz.mjs",
+    "fetch:assets": "node scripts/fetch-client-jar.mjs && node scripts/extract-jar.mjs",
+    "generate:sprites": "node scripts/generate-sprites.mjs",
+    "build": "npm run generate:data && npm run generate:transformations && npm run generate:quiz && tsc -b && vite build",
+    "lint": "oxlint",
+    "smoke": "jiti scripts/smoke-yesno.ts && jiti scripts/smoke-transforms.ts && jiti scripts/smoke-quiz.ts && jiti scripts/smoke-arcade.ts",
+    "preview": "vite preview",
+    "check:preview": "node scripts/check-preview.mjs",
+    "check:browser": "node scripts/browser-check.mjs",
+    "check:classes": "node scripts/check-orphan-classes.mjs",
+    "check:responsive": "node scripts/check-responsive.mjs",
+    "check:answers": "node scripts/check-answer-consistency.mjs",
+    "check:sprites": "node scripts/check-sprites.mjs",
+    "selfcheck": "node scripts/selfcheck-report.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "framer-motion": "^14.0.0",
+    "minecraft-data": "^3.117.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "fflate": "^0.8.3",
+    "jiti": "^2.6.1",
+    "oxlint": "^1.81.0",
+    "pngjs": "^7.0.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}

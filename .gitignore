@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+dist-verify
+# 本地下载的游戏客户端 jar 与解压产物（60MB+），属于个人缓存，不该进仓库。
+# 需要时用 `npm run fetch:assets` 重新获取，材质与音效的生成产物（public/）才需要提交。
+.cache
+# 临时构建目录：验证「样式故障能否被守卫抓到」时会另建一份注入错误的产物
+dist-fault
+.cdp-probe
+.cdp-segprobe
+.cdp-segprobe2
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

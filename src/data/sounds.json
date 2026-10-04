@@ -1,0 +1,1191 @@
+{
+  "version": "26.1",
+  "generatedAt": "2026-10-04T13:11:29.141Z",
+  "count": 131,
+  "byCategory": {
+    "block": 57,
+    "iconic": 19,
+    "mob": 55
+  },
+  "sounds": [
+    {
+      "id": "block:spore_blossom",
+      "file": "sounds/block_spore_blossom_break1.ogg",
+      "category": "block",
+      "entry": "spore_blossom",
+      "zh": "孢子花",
+      "action": "break1",
+      "source": "minecraft/sounds/block/spore_blossom/break1.ogg"
+    },
+    {
+      "id": "block:vault",
+      "file": "sounds/block_vault_break1.ogg",
+      "category": "block",
+      "entry": "vault",
+      "zh": "宝库",
+      "action": "break1",
+      "source": "minecraft/sounds/block/vault/break1.ogg"
+    },
+    {
+      "id": "block:rooted_dirt",
+      "file": "sounds/block_rooted_dirt_break1.ogg",
+      "category": "block",
+      "entry": "rooted_dirt",
+      "zh": "缠根泥土",
+      "action": "break1",
+      "source": "minecraft/sounds/block/rooted_dirt/break1.ogg"
+    },
+    {
+      "id": "block:heavy_core",
+      "file": "sounds/block_heavy_core_break1.ogg",
+      "category": "block",
+      "entry": "heavy_core",
+      "zh": "沉重核心",
+      "action": "break1",
+      "source": "minecraft/sounds/block/heavy_core/break1.ogg"
+    },
+    {
+      "id": "block:hanging_roots",
+      "file": "sounds/block_hanging_roots_break1.ogg",
+      "category": "block",
+      "entry": "hanging_roots",
+      "zh": "垂根",
+      "action": "break1",
+      "source": "minecraft/sounds/block/hanging_roots/break1.ogg"
+    },
+    {
+      "id": "block:lodestone",
+      "file": "sounds/block_lodestone_place1.ogg",
+      "category": "block",
+      "entry": "lodestone",
+      "zh": "磁石",
+      "action": "place1",
+      "source": "minecraft/sounds/block/lodestone/place1.ogg"
+    },
+    {
+      "id": "block:big_dripleaf",
+      "file": "sounds/block_big_dripleaf_break1.ogg",
+      "category": "block",
+      "entry": "big_dripleaf",
+      "zh": "大型垂滴叶",
+      "action": "break1",
+      "source": "minecraft/sounds/block/big_dripleaf/break1.ogg"
+    },
+    {
+      "id": "block:lantern",
+      "file": "sounds/block_lantern_break1.ogg",
+      "category": "block",
+      "entry": "lantern",
+      "zh": "灯笼",
+      "action": "break1",
+      "source": "minecraft/sounds/block/lantern/break1.ogg"
+    },
+    {
+      "id": "block:chiseled_bookshelf",
+      "file": "sounds/block_chiseled_bookshelf_break1.ogg",
+      "category": "block",
+      "entry": "chiseled_bookshelf",
+      "zh": "雕纹书架",
+      "action": "break1",
+      "source": "minecraft/sounds/block/chiseled_bookshelf/break1.ogg"
+    },
+    {
+      "id": "block:cave_vines",
+      "file": "sounds/block_cave_vines_break1.ogg",
+      "category": "block",
+      "entry": "cave_vines",
+      "zh": "洞穴藤蔓",
+      "action": "break1",
+      "source": "minecraft/sounds/block/cave_vines/break1.ogg"
+    },
+    {
+      "id": "block:azalea",
+      "file": "sounds/block_azalea_break1.ogg",
+      "category": "block",
+      "entry": "azalea",
+      "zh": "杜鹃花丛",
+      "action": "break1",
+      "source": "minecraft/sounds/block/azalea/break1.ogg"
+    },
+    {
+      "id": "block:azalea_leaves",
+      "file": "sounds/block_azalea_leaves_break1.ogg",
+      "category": "block",
+      "entry": "azalea_leaves",
+      "zh": "杜鹃花丛树叶",
+      "action": "break1",
+      "source": "minecraft/sounds/block/azalea_leaves/break1.ogg"
+    },
+    {
+      "id": "block:calcite",
+      "file": "sounds/block_calcite_break1.ogg",
+      "category": "block",
+      "entry": "calcite",
+      "zh": "方解石",
+      "action": "break1",
+      "source": "minecraft/sounds/block/calcite/break1.ogg"
+    },
+    {
+      "id": "block:bone_block",
+      "file": "sounds/block_bone_block_break1.ogg",
+      "category": "block",
+      "entry": "bone_block",
+      "zh": "骨块",
+      "action": "break1",
+      "source": "minecraft/sounds/block/bone_block/break1.ogg"
+    },
+    {
+      "id": "block:sponge",
+      "file": "sounds/block_sponge_break1.ogg",
+      "category": "block",
+      "entry": "sponge",
+      "zh": "海绵",
+      "action": "break1",
+      "source": "minecraft/sounds/block/sponge/break1.ogg"
+    },
+    {
+      "id": "block:mangrove_roots",
+      "file": "sounds/block_mangrove_roots_break1.ogg",
+      "category": "block",
+      "entry": "mangrove_roots",
+      "zh": "红树根",
+      "action": "break1",
+      "source": "minecraft/sounds/block/mangrove_roots/break1.ogg"
+    },
+    {
+      "id": "block:shroomlight",
+      "file": "sounds/block_shroomlight_break1.ogg",
+      "category": "block",
+      "entry": "shroomlight",
+      "zh": "菌光体",
+      "action": "break1",
+      "source": "minecraft/sounds/block/shroomlight/break1.ogg"
+    },
+    {
+      "id": "block:suspicious_gravel",
+      "file": "sounds/block_suspicious_gravel_break1.ogg",
+      "category": "block",
+      "entry": "suspicious_gravel",
+      "zh": "可疑的沙砾",
+      "action": "break1",
+      "source": "minecraft/sounds/block/suspicious_gravel/break1.ogg"
+    },
+    {
+      "id": "block:suspicious_sand",
+      "file": "sounds/block_suspicious_sand_break1.ogg",
+      "category": "block",
+      "entry": "suspicious_sand",
+      "zh": "可疑的沙子",
+      "action": "break1",
+      "source": "minecraft/sounds/block/suspicious_sand/break1.ogg"
+    },
+    {
+      "id": "block:leaf_litter",
+      "file": "sounds/block_leaf_litter_break1.ogg",
+      "category": "block",
+      "entry": "leaf_litter",
+      "zh": "枯叶堆",
+      "action": "break1",
+      "source": "minecraft/sounds/block/leaf_litter/break1.ogg"
+    },
+    {
+      "id": "block:candle",
+      "file": "sounds/block_candle_break1.ogg",
+      "category": "block",
+      "entry": "candle",
+      "zh": "蜡烛",
+      "action": "break1",
+      "source": "minecraft/sounds/block/candle/break1.ogg"
+    },
+    {
+      "id": "block:soul_sand",
+      "file": "sounds/block_soul_sand_break1.ogg",
+      "category": "block",
+      "entry": "soul_sand",
+      "zh": "灵魂沙",
+      "action": "break1",
+      "source": "minecraft/sounds/block/soul_sand/break1.ogg"
+    },
+    {
+      "id": "block:soul_soil",
+      "file": "sounds/block_soul_soil_break1.ogg",
+      "category": "block",
+      "entry": "soul_soil",
+      "zh": "灵魂土",
+      "action": "break1",
+      "source": "minecraft/sounds/block/soul_soil/break1.ogg"
+    },
+    {
+      "id": "block:mud",
+      "file": "sounds/block_mud_break1.ogg",
+      "category": "block",
+      "entry": "mud",
+      "zh": "泥巴",
+      "action": "break1",
+      "source": "minecraft/sounds/block/mud/break1.ogg"
+    },
+    {
+      "id": "block:packed_mud",
+      "file": "sounds/block_packed_mud_break1.ogg",
+      "category": "block",
+      "entry": "packed_mud",
+      "zh": "泥坯",
+      "action": "break1",
+      "source": "minecraft/sounds/block/packed_mud/break1.ogg"
+    },
+    {
+      "id": "block:mud_bricks",
+      "file": "sounds/block_mud_bricks_break1.ogg",
+      "category": "block",
+      "entry": "mud_bricks",
+      "zh": "泥砖",
+      "action": "break1",
+      "source": "minecraft/sounds/block/mud_bricks/break1.ogg"
+    },
+    {
+      "id": "block:tuff",
+      "file": "sounds/block_tuff_break1.ogg",
+      "category": "block",
+      "entry": "tuff",
+      "zh": "凝灰岩",
+      "action": "break1",
+      "source": "minecraft/sounds/block/tuff/break1.ogg"
+    },
+    {
+      "id": "block:tuff_bricks",
+      "file": "sounds/block_tuff_bricks_place1.ogg",
+      "category": "block",
+      "entry": "tuff_bricks",
+      "zh": "凝灰岩砖",
+      "action": "place1",
+      "source": "minecraft/sounds/block/tuff_bricks/place1.ogg"
+    },
+    {
+      "id": "block:frogspawn",
+      "file": "sounds/block_frogspawn_break1.ogg",
+      "category": "block",
+      "entry": "frogspawn",
+      "zh": "青蛙卵",
+      "action": "break1",
+      "source": "minecraft/sounds/block/frogspawn/break1.ogg"
+    },
+    {
+      "id": "block:deepslate",
+      "file": "sounds/block_deepslate_break1.ogg",
+      "category": "block",
+      "entry": "deepslate",
+      "zh": "深板岩",
+      "action": "break1",
+      "source": "minecraft/sounds/block/deepslate/break1.ogg"
+    },
+    {
+      "id": "block:deepslate_bricks",
+      "file": "sounds/block_deepslate_bricks_place1.ogg",
+      "category": "block",
+      "entry": "deepslate_bricks",
+      "zh": "深板岩砖",
+      "action": "place1",
+      "source": "minecraft/sounds/block/deepslate_bricks/place1.ogg"
+    },
+    {
+      "id": "block:dried_ghast",
+      "file": "sounds/block_dried_ghast_place1.ogg",
+      "category": "block",
+      "entry": "dried_ghast",
+      "zh": "失水恶魂",
+      "action": "place1",
+      "source": "minecraft/sounds/block/dried_ghast/place1.ogg"
+    },
+    {
+      "id": "block:trial_spawner",
+      "file": "sounds/block_trial_spawner_break1.ogg",
+      "category": "block",
+      "entry": "trial_spawner",
+      "zh": "试炼刷怪笼",
+      "action": "break1",
+      "source": "minecraft/sounds/block/trial_spawner/break1.ogg"
+    },
+    {
+      "id": "block:decorated_pot",
+      "file": "sounds/block_decorated_pot_break1.ogg",
+      "category": "block",
+      "entry": "decorated_pot",
+      "zh": "饰纹陶罐",
+      "action": "break1",
+      "source": "minecraft/sounds/block/decorated_pot/break1.ogg"
+    },
+    {
+      "id": "block:spawner",
+      "file": "sounds/block_spawner_break1.ogg",
+      "category": "block",
+      "entry": "spawner",
+      "zh": "刷怪笼",
+      "action": "break1",
+      "source": "minecraft/sounds/block/spawner/break1.ogg"
+    },
+    {
+      "id": "block:vine",
+      "file": "sounds/block_vine_break1.ogg",
+      "category": "block",
+      "entry": "vine",
+      "zh": "藤蔓",
+      "action": "break1",
+      "source": "minecraft/sounds/block/vine/break1.ogg"
+    },
+    {
+      "id": "block:sweet_berry_bush",
+      "file": "sounds/block_sweet_berry_bush_break1.ogg",
+      "category": "block",
+      "entry": "sweet_berry_bush",
+      "zh": "甜浆果",
+      "action": "break1",
+      "source": "minecraft/sounds/block/sweet_berry_bush/break1.ogg"
+    },
+    {
+      "id": "block:copper_bulb",
+      "file": "sounds/block_copper_bulb_break1.ogg",
+      "category": "block",
+      "entry": "copper_bulb",
+      "zh": "铜灯",
+      "action": "break1",
+      "source": "minecraft/sounds/block/copper_bulb/break1.ogg"
+    },
+    {
+      "id": "block:copper_grate",
+      "file": "sounds/block_copper_grate_break1.ogg",
+      "category": "block",
+      "entry": "copper_grate",
+      "zh": "铜格栅",
+      "action": "break1",
+      "source": "minecraft/sounds/block/copper_grate/break1.ogg"
+    },
+    {
+      "id": "block:powder_snow",
+      "file": "sounds/block_powder_snow_break1.ogg",
+      "category": "block",
+      "entry": "powder_snow",
+      "zh": "细雪",
+      "action": "break1",
+      "source": "minecraft/sounds/block/powder_snow/break1.ogg"
+    },
+    {
+      "id": "block:nether_sprouts",
+      "file": "sounds/block_nether_sprouts_break1.ogg",
+      "category": "block",
+      "entry": "nether_sprouts",
+      "zh": "下界苗",
+      "action": "break1",
+      "source": "minecraft/sounds/block/nether_sprouts/break1.ogg"
+    },
+    {
+      "id": "block:netherrack",
+      "file": "sounds/block_netherrack_break1.ogg",
+      "category": "block",
+      "entry": "netherrack",
+      "zh": "下界岩",
+      "action": "break1",
+      "source": "minecraft/sounds/block/netherrack/break1.ogg"
+    },
+    {
+      "id": "block:nether_bricks",
+      "file": "sounds/block_nether_bricks_break1.ogg",
+      "category": "block",
+      "entry": "nether_bricks",
+      "zh": "下界砖块",
+      "action": "break1",
+      "source": "minecraft/sounds/block/nether_bricks/break1.ogg"
+    },
+    {
+      "id": "block:cactus_flower",
+      "file": "sounds/block_cactus_flower_break1.ogg",
+      "category": "block",
+      "entry": "cactus_flower",
+      "zh": "仙人掌花",
+      "action": "break1",
+      "source": "minecraft/sounds/block/cactus_flower/break1.ogg"
+    },
+    {
+      "id": "block:basalt",
+      "file": "sounds/block_basalt_break1.ogg",
+      "category": "block",
+      "entry": "basalt",
+      "zh": "玄武岩",
+      "action": "break1",
+      "source": "minecraft/sounds/block/basalt/break1.ogg"
+    },
+    {
+      "id": "block:cherry_wood",
+      "file": "sounds/block_cherry_wood_break1.ogg",
+      "category": "block",
+      "entry": "cherry_wood",
+      "zh": "樱花木木头",
+      "action": "break1",
+      "source": "minecraft/sounds/block/cherry_wood/break1.ogg"
+    },
+    {
+      "id": "block:cherry_leaves",
+      "file": "sounds/block_cherry_leaves_break1.ogg",
+      "category": "block",
+      "entry": "cherry_leaves",
+      "zh": "樱花木树叶",
+      "action": "break1",
+      "source": "minecraft/sounds/block/cherry_leaves/break1.ogg"
+    },
+    {
+      "id": "block:sculk_catalyst",
+      "file": "sounds/block_sculk_catalyst_break1.ogg",
+      "category": "block",
+      "entry": "sculk_catalyst",
+      "zh": "幽匿催发体",
+      "action": "break1",
+      "source": "minecraft/sounds/block/sculk_catalyst/break1.ogg"
+    },
+    {
+      "id": "block:sculk_sensor",
+      "file": "sounds/block_sculk_sensor_break1.ogg",
+      "category": "block",
+      "entry": "sculk_sensor",
+      "zh": "幽匿感测体",
+      "action": "break1",
+      "source": "minecraft/sounds/block/sculk_sensor/break1.ogg"
+    },
+    {
+      "id": "block:sculk_shrieker",
+      "file": "sounds/block_sculk_shrieker_break1.ogg",
+      "category": "block",
+      "entry": "sculk_shrieker",
+      "zh": "幽匿尖啸体",
+      "action": "break1",
+      "source": "minecraft/sounds/block/sculk_shrieker/break1.ogg"
+    },
+    {
+      "id": "block:sculk",
+      "file": "sounds/block_sculk_break1.ogg",
+      "category": "block",
+      "entry": "sculk",
+      "zh": "幽匿块",
+      "action": "break1",
+      "source": "minecraft/sounds/block/sculk/break1.ogg"
+    },
+    {
+      "id": "block:sculk_vein",
+      "file": "sounds/block_sculk_vein_break1.ogg",
+      "category": "block",
+      "entry": "sculk_vein",
+      "zh": "幽匿脉络",
+      "action": "break1",
+      "source": "minecraft/sounds/block/sculk_vein/break1.ogg"
+    },
+    {
+      "id": "block:ancient_debris",
+      "file": "sounds/block_ancient_debris_break1.ogg",
+      "category": "block",
+      "entry": "ancient_debris",
+      "zh": "远古残骸",
+      "action": "break1",
+      "source": "minecraft/sounds/block/ancient_debris/break1.ogg"
+    },
+    {
+      "id": "block:muddy_mangrove_roots",
+      "file": "sounds/block_muddy_mangrove_roots_break1.ogg",
+      "category": "block",
+      "entry": "muddy_mangrove_roots",
+      "zh": "沾泥的红树根",
+      "action": "break1",
+      "source": "minecraft/sounds/block/muddy_mangrove_roots/break1.ogg"
+    },
+    {
+      "id": "block:cobweb",
+      "file": "sounds/block_cobweb_break1.ogg",
+      "category": "block",
+      "entry": "cobweb",
+      "zh": "蜘蛛网",
+      "action": "break1",
+      "source": "minecraft/sounds/block/cobweb/break1.ogg"
+    },
+    {
+      "id": "block:bamboo",
+      "file": "sounds/block_bamboo_place1.ogg",
+      "category": "block",
+      "entry": "bamboo",
+      "zh": "竹子",
+      "action": "place1",
+      "source": "minecraft/sounds/block/bamboo/place1.ogg"
+    },
+    {
+      "id": "block:amethyst_cluster",
+      "file": "sounds/block_amethyst_cluster_break1.ogg",
+      "category": "block",
+      "entry": "amethyst_cluster",
+      "zh": "紫水晶簇",
+      "action": "break1",
+      "source": "minecraft/sounds/block/amethyst_cluster/break1.ogg"
+    },
+    {
+      "id": "iconic:random/click",
+      "file": "sounds/iconic_random_click_click.ogg",
+      "category": "iconic",
+      "entry": "random/click",
+      "zh": "按钮咔哒",
+      "action": "click",
+      "source": "minecraft/sounds/random/click.ogg"
+    },
+    {
+      "id": "iconic:random/explode1",
+      "file": "sounds/iconic_random_explode1_explode1.ogg",
+      "category": "iconic",
+      "entry": "random/explode1",
+      "zh": "爆炸",
+      "action": "explode1",
+      "source": "minecraft/sounds/random/explode1.ogg"
+    },
+    {
+      "id": "iconic:portal/portal",
+      "file": "sounds/iconic_portal_portal_portal.ogg",
+      "category": "iconic",
+      "entry": "portal/portal",
+      "zh": "传送门",
+      "action": "portal",
+      "source": "minecraft/sounds/portal/portal.ogg"
+    },
+    {
+      "id": "iconic:portal/trigger",
+      "file": "sounds/iconic_portal_trigger_trigger.ogg",
+      "category": "iconic",
+      "entry": "portal/trigger",
+      "zh": "传送门触发",
+      "action": "trigger",
+      "source": "minecraft/sounds/portal/trigger.ogg"
+    },
+    {
+      "id": "iconic:random/burp",
+      "file": "sounds/iconic_random_burp_burp.ogg",
+      "category": "iconic",
+      "entry": "random/burp",
+      "zh": "打嗝",
+      "action": "burp",
+      "source": "minecraft/sounds/random/burp.ogg"
+    },
+    {
+      "id": "iconic:fire/ignite",
+      "file": "sounds/iconic_fire_ignite_ignite.ogg",
+      "category": "iconic",
+      "entry": "fire/ignite",
+      "zh": "点火",
+      "action": "ignite",
+      "source": "minecraft/sounds/fire/ignite.ogg"
+    },
+    {
+      "id": "iconic:random/door_close",
+      "file": "sounds/iconic_random_door_close_door_close.ogg",
+      "category": "iconic",
+      "entry": "random/door_close",
+      "zh": "关门",
+      "action": "door_close",
+      "source": "minecraft/sounds/random/door_close.ogg"
+    },
+    {
+      "id": "iconic:fire/fire",
+      "file": "sounds/iconic_fire_fire_fire.ogg",
+      "category": "iconic",
+      "entry": "fire/fire",
+      "zh": "火焰燃烧",
+      "action": "fire",
+      "source": "minecraft/sounds/fire/fire.ogg"
+    },
+    {
+      "id": "iconic:random/eat1",
+      "file": "sounds/iconic_random_eat1_eat1.ogg",
+      "category": "iconic",
+      "entry": "random/eat1",
+      "zh": "进食",
+      "action": "eat1",
+      "source": "minecraft/sounds/random/eat1.ogg"
+    },
+    {
+      "id": "iconic:random/door_open",
+      "file": "sounds/iconic_random_door_open_door_open.ogg",
+      "category": "iconic",
+      "entry": "random/door_open",
+      "zh": "开门",
+      "action": "door_open",
+      "source": "minecraft/sounds/random/door_open.ogg"
+    },
+    {
+      "id": "iconic:random/bow",
+      "file": "sounds/iconic_random_bow_bow.ogg",
+      "category": "iconic",
+      "entry": "random/bow",
+      "zh": "拉弓",
+      "action": "bow",
+      "source": "minecraft/sounds/random/bow.ogg"
+    },
+    {
+      "id": "iconic:random/pop",
+      "file": "sounds/iconic_random_pop_pop.ogg",
+      "category": "iconic",
+      "entry": "random/pop",
+      "zh": "气泡破裂",
+      "action": "pop",
+      "source": "minecraft/sounds/random/pop.ogg"
+    },
+    {
+      "id": "iconic:random/splash",
+      "file": "sounds/iconic_random_splash_splash.ogg",
+      "category": "iconic",
+      "entry": "random/splash",
+      "zh": "入水",
+      "action": "splash",
+      "source": "minecraft/sounds/random/splash.ogg"
+    },
+    {
+      "id": "iconic:random/levelup",
+      "file": "sounds/iconic_random_levelup_levelup.ogg",
+      "category": "iconic",
+      "entry": "random/levelup",
+      "zh": "升级",
+      "action": "levelup",
+      "source": "minecraft/sounds/random/levelup.ogg"
+    },
+    {
+      "id": "iconic:random/orb",
+      "file": "sounds/iconic_random_orb_orb.ogg",
+      "category": "iconic",
+      "entry": "random/orb",
+      "zh": "拾取经验球",
+      "action": "orb",
+      "source": "minecraft/sounds/random/orb.ogg"
+    },
+    {
+      "id": "iconic:liquid/splash",
+      "file": "sounds/iconic_liquid_splash_splash.ogg",
+      "category": "iconic",
+      "entry": "liquid/splash",
+      "zh": "水花",
+      "action": "splash",
+      "source": "minecraft/sounds/liquid/splash.ogg"
+    },
+    {
+      "id": "iconic:random/anvil_land",
+      "file": "sounds/iconic_random_anvil_land_anvil_land.ogg",
+      "category": "iconic",
+      "entry": "random/anvil_land",
+      "zh": "铁砧落地",
+      "action": "anvil_land",
+      "source": "minecraft/sounds/random/anvil_land.ogg"
+    },
+    {
+      "id": "iconic:liquid/lava",
+      "file": "sounds/iconic_liquid_lava_lava.ogg",
+      "category": "iconic",
+      "entry": "liquid/lava",
+      "zh": "岩浆",
+      "action": "lava",
+      "source": "minecraft/sounds/liquid/lava.ogg"
+    },
+    {
+      "id": "iconic:random/fizz",
+      "file": "sounds/iconic_random_fizz_fizz.ogg",
+      "category": "iconic",
+      "entry": "random/fizz",
+      "zh": "引信嘶嘶",
+      "action": "fizz",
+      "source": "minecraft/sounds/random/fizz.ogg"
+    },
+    {
+      "id": "mob:bat",
+      "file": "sounds/mob_bat_hurt1.ogg",
+      "category": "mob",
+      "entry": "bat",
+      "zh": "蝙蝠",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/bat/hurt1.ogg"
+    },
+    {
+      "id": "mob:strider",
+      "file": "sounds/mob_strider_hurt1.ogg",
+      "category": "mob",
+      "entry": "strider",
+      "zh": "炽足兽",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/strider/hurt1.ogg"
+    },
+    {
+      "id": "mob:villager",
+      "file": "sounds/mob_villager_haggle1.ogg",
+      "category": "mob",
+      "entry": "villager",
+      "zh": "村民",
+      "action": "haggle1",
+      "source": "minecraft/sounds/mob/villager/haggle1.ogg"
+    },
+    {
+      "id": "mob:wither",
+      "file": "sounds/mob_wither_hurt1.ogg",
+      "category": "mob",
+      "entry": "wither",
+      "zh": "凋灵",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/wither/hurt1.ogg"
+    },
+    {
+      "id": "mob:wither_skeleton",
+      "file": "sounds/mob_wither_skeleton_hurt1.ogg",
+      "category": "mob",
+      "entry": "wither_skeleton",
+      "zh": "凋灵骷髅",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/wither_skeleton/hurt1.ogg"
+    },
+    {
+      "id": "mob:silverfish",
+      "file": "sounds/mob_silverfish_say1.ogg",
+      "category": "mob",
+      "entry": "silverfish",
+      "zh": "蠹虫",
+      "action": "say1",
+      "source": "minecraft/sounds/mob/silverfish/say1.ogg"
+    },
+    {
+      "id": "mob:ghast",
+      "file": "sounds/mob_ghast_affectionate_scream.ogg",
+      "category": "mob",
+      "entry": "ghast",
+      "zh": "恶魂",
+      "action": "affectionate_scream",
+      "source": "minecraft/sounds/mob/ghast/affectionate_scream.ogg"
+    },
+    {
+      "id": "mob:glow_squid",
+      "file": "sounds/mob_glow_squid_ambient1.ogg",
+      "category": "mob",
+      "entry": "glow_squid",
+      "zh": "发光鱿鱼",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/glow_squid/ambient1.ogg"
+    },
+    {
+      "id": "mob:turtle",
+      "file": "sounds/mob_turtle_hurt1.ogg",
+      "category": "mob",
+      "entry": "turtle",
+      "zh": "海龟",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/turtle/hurt1.ogg"
+    },
+    {
+      "id": "mob:dolphin",
+      "file": "sounds/mob_dolphin_hurt1.ogg",
+      "category": "mob",
+      "entry": "dolphin",
+      "zh": "海豚",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/dolphin/hurt1.ogg"
+    },
+    {
+      "id": "mob:pufferfish",
+      "file": "sounds/mob_pufferfish_hurt1.ogg",
+      "category": "mob",
+      "entry": "pufferfish",
+      "zh": "河豚",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/pufferfish/hurt1.ogg"
+    },
+    {
+      "id": "mob:fox",
+      "file": "sounds/mob_fox_hurt1.ogg",
+      "category": "mob",
+      "entry": "fox",
+      "zh": "狐狸",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/fox/hurt1.ogg"
+    },
+    {
+      "id": "mob:phantom",
+      "file": "sounds/mob_phantom_hurt1.ogg",
+      "category": "mob",
+      "entry": "phantom",
+      "zh": "幻翼",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/phantom/hurt1.ogg"
+    },
+    {
+      "id": "mob:chicken",
+      "file": "sounds/mob_chicken_hurt1.ogg",
+      "category": "mob",
+      "entry": "chicken",
+      "zh": "鸡",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/chicken/hurt1.ogg"
+    },
+    {
+      "id": "mob:zombie",
+      "file": "sounds/mob_zombie_hurt1.ogg",
+      "category": "mob",
+      "entry": "zombie",
+      "zh": "僵尸",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/zombie/hurt1.ogg"
+    },
+    {
+      "id": "mob:zombie_villager",
+      "file": "sounds/mob_zombie_villager_hurt1.ogg",
+      "category": "mob",
+      "entry": "zombie_villager",
+      "zh": "僵尸村民",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/zombie_villager/hurt1.ogg"
+    },
+    {
+      "id": "mob:zombie_nautilus",
+      "file": "sounds/mob_zombie_nautilus_ambient1.ogg",
+      "category": "mob",
+      "entry": "zombie_nautilus",
+      "zh": "僵尸鹦鹉螺",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/zombie_nautilus/ambient1.ogg"
+    },
+    {
+      "id": "mob:zoglin",
+      "file": "sounds/mob_zoglin_hurt1.ogg",
+      "category": "mob",
+      "entry": "zoglin",
+      "zh": "僵尸疣猪兽",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/zoglin/hurt1.ogg"
+    },
+    {
+      "id": "mob:parched",
+      "file": "sounds/mob_parched_ambient1.ogg",
+      "category": "mob",
+      "entry": "parched",
+      "zh": "焦骸",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/parched/ambient1.ogg"
+    },
+    {
+      "id": "mob:ravager",
+      "file": "sounds/mob_ravager_hurt1.ogg",
+      "category": "mob",
+      "entry": "ravager",
+      "zh": "劫掠兽",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/ravager/hurt1.ogg"
+    },
+    {
+      "id": "mob:tadpole",
+      "file": "sounds/mob_tadpole_hurt1.ogg",
+      "category": "mob",
+      "entry": "tadpole",
+      "zh": "蝌蚪",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/tadpole/hurt1.ogg"
+    },
+    {
+      "id": "mob:skeleton",
+      "file": "sounds/mob_skeleton_hurt1.ogg",
+      "category": "mob",
+      "entry": "skeleton",
+      "zh": "骷髅",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/skeleton/hurt1.ogg"
+    },
+    {
+      "id": "mob:creeper",
+      "file": "sounds/mob_creeper_say1.ogg",
+      "category": "mob",
+      "entry": "creeper",
+      "zh": "苦力怕",
+      "action": "say1",
+      "source": "minecraft/sounds/mob/creeper/say1.ogg"
+    },
+    {
+      "id": "mob:happy_ghast",
+      "file": "sounds/mob_happy_ghast_ambient1.ogg",
+      "category": "mob",
+      "entry": "happy_ghast",
+      "zh": "快乐恶魂",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/happy_ghast/ambient1.ogg"
+    },
+    {
+      "id": "mob:wandering_trader",
+      "file": "sounds/mob_wandering_trader_haggle1.ogg",
+      "category": "mob",
+      "entry": "wandering_trader",
+      "zh": "流浪商人",
+      "action": "haggle1",
+      "source": "minecraft/sounds/mob/wandering_trader/haggle1.ogg"
+    },
+    {
+      "id": "mob:stray",
+      "file": "sounds/mob_stray_hurt1.ogg",
+      "category": "mob",
+      "entry": "stray",
+      "zh": "流浪者",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/stray/hurt1.ogg"
+    },
+    {
+      "id": "mob:pillager",
+      "file": "sounds/mob_pillager_hurt1.ogg",
+      "category": "mob",
+      "entry": "pillager",
+      "zh": "掠夺者",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/pillager/hurt1.ogg"
+    },
+    {
+      "id": "mob:camel",
+      "file": "sounds/mob_camel_ambient1.ogg",
+      "category": "mob",
+      "entry": "camel",
+      "zh": "骆驼",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/camel/ambient1.ogg"
+    },
+    {
+      "id": "mob:camel_husk",
+      "file": "sounds/mob_camel_husk_ambient1.ogg",
+      "category": "mob",
+      "entry": "camel_husk",
+      "zh": "骆驼尸壳",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/camel_husk/ambient1.ogg"
+    },
+    {
+      "id": "mob:horse",
+      "file": "sounds/mob_horse_idle1.ogg",
+      "category": "mob",
+      "entry": "horse",
+      "zh": "马",
+      "action": "idle1",
+      "source": "minecraft/sounds/mob/horse/idle1.ogg"
+    },
+    {
+      "id": "mob:axolotl",
+      "file": "sounds/mob_axolotl_hurt1.ogg",
+      "category": "mob",
+      "entry": "axolotl",
+      "zh": "美西螈",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/axolotl/hurt1.ogg"
+    },
+    {
+      "id": "mob:bee",
+      "file": "sounds/mob_bee_hurt1.ogg",
+      "category": "mob",
+      "entry": "bee",
+      "zh": "蜜蜂",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/bee/hurt1.ogg"
+    },
+    {
+      "id": "mob:sheep",
+      "file": "sounds/mob_sheep_say1.ogg",
+      "category": "mob",
+      "entry": "sheep",
+      "zh": "绵羊",
+      "action": "say1",
+      "source": "minecraft/sounds/mob/sheep/say1.ogg"
+    },
+    {
+      "id": "mob:vex",
+      "file": "sounds/mob_vex_hurt1.ogg",
+      "category": "mob",
+      "entry": "vex",
+      "zh": "恼鬼",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/vex/hurt1.ogg"
+    },
+    {
+      "id": "mob:drowned",
+      "file": "sounds/mob_drowned_hurt1.ogg",
+      "category": "mob",
+      "entry": "drowned",
+      "zh": "溺尸",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/drowned/hurt1.ogg"
+    },
+    {
+      "id": "mob:cow",
+      "file": "sounds/mob_cow_hurt1.ogg",
+      "category": "mob",
+      "entry": "cow",
+      "zh": "牛",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/cow/hurt1.ogg"
+    },
+    {
+      "id": "mob:frog",
+      "file": "sounds/mob_frog_hurt1.ogg",
+      "category": "mob",
+      "entry": "frog",
+      "zh": "青蛙",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/frog/hurt1.ogg"
+    },
+    {
+      "id": "mob:armadillo",
+      "file": "sounds/mob_armadillo_ambient1.ogg",
+      "category": "mob",
+      "entry": "armadillo",
+      "zh": "犰狳",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/armadillo/ambient1.ogg"
+    },
+    {
+      "id": "mob:goat",
+      "file": "sounds/mob_goat_hurt1.ogg",
+      "category": "mob",
+      "entry": "goat",
+      "zh": "山羊",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/goat/hurt1.ogg"
+    },
+    {
+      "id": "mob:husk",
+      "file": "sounds/mob_husk_hurt1.ogg",
+      "category": "mob",
+      "entry": "husk",
+      "zh": "尸壳",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/husk/hurt1.ogg"
+    },
+    {
+      "id": "mob:rabbit",
+      "file": "sounds/mob_rabbit_hurt1.ogg",
+      "category": "mob",
+      "entry": "rabbit",
+      "zh": "兔子",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/rabbit/hurt1.ogg"
+    },
+    {
+      "id": "mob:panda",
+      "file": "sounds/mob_panda_hurt1.ogg",
+      "category": "mob",
+      "entry": "panda",
+      "zh": "熊猫",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/panda/hurt1.ogg"
+    },
+    {
+      "id": "mob:sniffer",
+      "file": "sounds/mob_sniffer_hurt1.ogg",
+      "category": "mob",
+      "entry": "sniffer",
+      "zh": "嗅探兽",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/sniffer/hurt1.ogg"
+    },
+    {
+      "id": "mob:breeze",
+      "file": "sounds/mob_breeze_hurt1.ogg",
+      "category": "mob",
+      "entry": "breeze",
+      "zh": "旋风人",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/breeze/hurt1.ogg"
+    },
+    {
+      "id": "mob:llama",
+      "file": "sounds/mob_llama_hurt1.ogg",
+      "category": "mob",
+      "entry": "llama",
+      "zh": "羊驼",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/llama/hurt1.ogg"
+    },
+    {
+      "id": "mob:parrot",
+      "file": "sounds/mob_parrot_hurt1.ogg",
+      "category": "mob",
+      "entry": "parrot",
+      "zh": "鹦鹉",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/parrot/hurt1.ogg"
+    },
+    {
+      "id": "mob:nautilus",
+      "file": "sounds/mob_nautilus_ambient1.ogg",
+      "category": "mob",
+      "entry": "nautilus",
+      "zh": "鹦鹉螺",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/nautilus/ambient1.ogg"
+    },
+    {
+      "id": "mob:hoglin",
+      "file": "sounds/mob_hoglin_hurt1.ogg",
+      "category": "mob",
+      "entry": "hoglin",
+      "zh": "疣猪兽",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/hoglin/hurt1.ogg"
+    },
+    {
+      "id": "mob:squid",
+      "file": "sounds/mob_squid_ambient1.ogg",
+      "category": "mob",
+      "entry": "squid",
+      "zh": "鱿鱼",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/squid/ambient1.ogg"
+    },
+    {
+      "id": "mob:allay",
+      "file": "sounds/mob_allay_hurt1.ogg",
+      "category": "mob",
+      "entry": "allay",
+      "zh": "悦灵",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/allay/hurt1.ogg"
+    },
+    {
+      "id": "mob:bogged",
+      "file": "sounds/mob_bogged_ambient1.ogg",
+      "category": "mob",
+      "entry": "bogged",
+      "zh": "沼骸",
+      "action": "ambient1",
+      "source": "minecraft/sounds/mob/bogged/ambient1.ogg"
+    },
+    {
+      "id": "mob:spider",
+      "file": "sounds/mob_spider_say1.ogg",
+      "category": "mob",
+      "entry": "spider",
+      "zh": "蜘蛛",
+      "action": "say1",
+      "source": "minecraft/sounds/mob/spider/say1.ogg"
+    },
+    {
+      "id": "mob:pig",
+      "file": "sounds/mob_pig_say1.ogg",
+      "category": "mob",
+      "entry": "pig",
+      "zh": "猪",
+      "action": "say1",
+      "source": "minecraft/sounds/mob/pig/say1.ogg"
+    },
+    {
+      "id": "mob:piglin",
+      "file": "sounds/mob_piglin_hurt1.ogg",
+      "category": "mob",
+      "entry": "piglin",
+      "zh": "猪灵",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/piglin/hurt1.ogg"
+    },
+    {
+      "id": "mob:piglin_brute",
+      "file": "sounds/mob_piglin_brute_hurt1.ogg",
+      "category": "mob",
+      "entry": "piglin_brute",
+      "zh": "猪灵蛮兵",
+      "action": "hurt1",
+      "source": "minecraft/sounds/mob/piglin_brute/hurt1.ogg"
+    }
+  ]
+}

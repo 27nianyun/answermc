@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Microsoft YaHei UI", "Segoe UI", system-ui, sans-serif;
+  color: #242820;
+  background: #f2efe6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --paper: #f7f4eb;
+  --paper-strong: #fffdf7;
+  --ink: #242820;
+  --muted: #717565;
+  --line: #c9c8b9;
+  --line-dark: #8b8e7e;
+  --accent: #527a4b;
+  --accent-deep: #35583b;
+  --accent-soft: #dce7d5;
+  --soil: #8b684a;
+  --warn: #a66a3f;
+  --danger: #92473d;
+  --shadow: 0 18px 45px rgba(50, 55, 43, 0.11);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: #f2efe6;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100dvh;
+  margin: 0;
+  background:
+    linear-gradient(rgba(75, 82, 66, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(75, 82, 66, 0.045) 1px, transparent 1px),
+    #f2efe6;
+  background-size: 24px 24px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #315f42;
+  outline-offset: 3px;
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+::selection {
+  color: #fff;
+  background: var(--accent-deep);
+}
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-play-state: paused !important;
+  scroll-behavior: auto !important;
+  transition-duration: 0.01ms !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

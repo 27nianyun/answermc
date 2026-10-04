@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-10-04T10:46:07.542Z",
+  "offline": false,
+  "counts": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "checks": [
+    {
+      "id": "classes",
+      "label": "样式孤儿类",
+      "detail": "代码里用到的 class 与 var() 是否都有定义",
+      "command": "node scripts/check-orphan-classes.mjs",
+      "status": "passed",
+      "ms": 231,
+      "lines": [
+        "没有孤儿类，也没有未定义变量：代码里用到的 class 与 var() 都有对应定义"
+      ]
+    },
+    {
+      "id": "answers",
+      "label": "答案自洽",
+      "detail": "解释里说的「正确答案 N」与被判为正确的选项是否一致",
+      "command": "node scripts/check-answer-consistency.mjs",
+      "status": "passed",
+      "ms": 231,
+      "lines": [
+        "没有「解释断言的答案」与「被判为正确的选项」矛盾的问题"
+      ]
+    },
+    {
+      "id": "sprites",
+      "label": "贴图健康",
+      "detail": "catalog 每条是否都有可用贴图，有无孤儿素材",
+      "command": "node scripts/check-sprites.mjs",
+      "status": "passed",
+      "ms": 532,
+      "lines": [
+        "2805 个贴图文件全部存在（共 5.6 MB）",
+        "2827 条目录全部有贴图或已知兜底（22 条走 VoxelGlyph）",
+        "22 条兜底条目均已核实：清单无映射且磁盘无文件",
+        "没有孤儿贴图（清单与目录一一对应）"
+      ]
+    },
+    {
+      "id": "preview",
+      "label": "构建产物引用",
+      "detail": "预览服务返回的 HTML 是否引用当前构建里的文件",
+      "command": "node scripts/check-preview.mjs 4205 dist",
+      "status": "passed",
+      "ms": 308,
+      "lines": [
+        "服务可达",
+        "引用的 2 个资源在磁盘上都存在",
+        "所有引用资源都能正常下载"
+      ]
+    },
+    {
+      "id": "responsive",
+      "label": "多视口布局",
+      "detail": "1440 / 1100 / 900 / 720 / 560 / 390 六档下的溢出与可点性",
+      "command": "node scripts/check-responsive.mjs",
+      "status": "passed",
+      "ms": 81810,
+      "lines": [
+        "无横向滚动",
+        "四个选项都在",
+        "四个选项都可点",
+        "选项文字未被截断"
+      ]
+    },
+    {
+      "id": "browser",
+      "label": "真实浏览器交互",
+      "detail": "CDP 驱动 Chrome 跑完整交互，含答错视觉与分段控件",
+      "command": "node scripts/browser-check.mjs",
+      "status": "passed",
+      "ms": 23528,
+      "lines": [
+        "应用已挂载",
+        "能切到知识问答视图",
+        "渲染出 4 个选项",
+        "首屏四个选项都可点"
+      ]
+    }
+  ],
+  "size": {
+    "catalog": 2827,
+    "transformations": 1096,
+    "questions": 1014,
+    "sprites": 2805
+  }
+}
