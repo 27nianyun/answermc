@@ -118,10 +118,19 @@ export const duelRound = (difficulty: Difficulty, seed?: string): DuelRound | nu
 
       const high = Math.max(leftValue, rightValue)
       const low = Math.min(leftValue, rightValue)
-      // 相等也是一种合法答案（tie），但只在极限难度保留 ——
-      // 入门档出现「一样高」会让玩家觉得在玩文字游戏
+      /*
+      相等也是一种合法答案（tie），但要**限流**。
+
+      第一版只在极限难度放开 tie，结果实测 120 题里出了 47 次平局（39%）——
+      因为遮光等级绝大多数方块都是 15、发光等级绝大多数都是 0，
+      随机撞上相等的概率远高于「正好差 5%」。
+      每 5 题就有 2 题是「一样高」，玩家会觉得在玩文字游戏而不是考知识。
+
+      所以 tie 是**刻意的稀有题型**（约 18%），撞上相等时多数情况直接换一对，
+      只有少数时候才把它当成一道「你敢不敢赌它们一样」的题。
+      */
       if (high === low) {
-        if (difficulty !== 'hardcore') continue
+        if (difficulty !== 'hardcore' || random() > 0.18) continue
         return {
           metric, left: a, right: b, leftValue, rightValue, answer: 'tie',
           explanation: `两者${metric}都是 ${leftValue}，一样${metric === '硬度' ? '硬' : '高'}。`,
@@ -343,11 +352,30 @@ export const oddRound = (difficulty: Difficulty, seed?: string): OddRound | null
     const others = targetFamilies.filter(([name]) => name !== familyName)
     if (!others.length) continue
 
-    const same = sampleWith(members, 3, random)
+    /*
+    抽 3 个同族时**必须按中文名去重**。
+    这是实测出来的 bug：catalog 里方块和物品是两条独立记录，
+    中文名却完全一样（block:orange_stained_glass 与 item:orange_stained_glass
+    都叫「橙色染色玻璃」），同一 family 里两者都在，
+    不去重就会出「绿色旗帜 / 青色染色玻璃 / 橙色染色玻璃 / 橙色染色玻璃」这种题 ——
+    选项里两个一模一样的名字，玩家选哪个都算同一个，题直接废掉。
+    所以多抽一些候选再按名字过滤，凑不满 3 个就换一族。
+    */
+    const seenNames = new Set<string>()
+    const same: CatalogEntry[] = []
+    for (const entry of sampleWith(members, 12, random)) {
+      if (seenNames.has(entry.zhName)) continue
+      seenNames.add(entry.zhName)
+      same.push(entry)
+      if (same.length === 3) break
+    }
     if (same.length < 3) continue
+
     const [otherFamily, otherMembers] = others[Math.floor(random() * others.length)]
     const odd = otherMembers[Math.floor(random() * otherMembers.length)]
     if (!odd) continue
+    // 异类也不能跟同族三项重名，否则同样会出现两个一样的选项
+    if (seenNames.has(odd.zhName)) continue
 
     const items = shuffleWith([...same, odd], random)
     const answerIndex = items.findIndex((entry) => entry.id === odd.id)
