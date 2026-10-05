@@ -19,6 +19,7 @@
     "check:classes": "node scripts/check-orphan-classes.mjs",
     "check:responsive": "node scripts/check-responsive.mjs",
     "check:answers": "node scripts/check-answer-consistency.mjs",
+    "check:achievements": "jiti scripts/check-achievements.mjs",
     "check:sprites": "node scripts/check-sprites.mjs",
     "selfcheck": "node scripts/selfcheck-report.mjs"
   },
