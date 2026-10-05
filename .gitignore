@@ -21,6 +21,33 @@ dist-fault
 .cdp-segprobe2
 *.local
 
+# wrangler / Cloudflare 的本地产物。
+# .wrangler/tmp/ 里是每次 deploy 生成的 Functions 打包快照，属于机器本地缓存，
+# 体积不大但会跟着部署不断变动 —— 不忽略的话，一次 `git add .` 就会把它捎进仓库。
+.wrangler
+
+# 密钥与凭据。
+# 本项目目前【不用】.env（Cloudflare 凭据走 wrangler 的 OAuth / 环境变量，never in repo），
+# 但把这条先写好：真要用 .env 的那天，它不会被顺手提交出去。
+# 注意别写反了：`.env` 会连带匹配 `.env.example`（模板文件是要提交的），
+# 所以显式放行 `.env.example` / `.env.template`。
+.env
+.env.*
+!.env.example
+!.env.template
+
+# 各类凭据文件。密钥一旦进了 git 历史，光删文件是没用的（历史里还在），
+# 必须去服务商后台吊销重发 —— 所以根本别让它进来。
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+credentials.json
+service-account*.json
+secrets.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
