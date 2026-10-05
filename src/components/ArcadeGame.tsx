@@ -24,6 +24,8 @@ import type {
   ReverseRound,
   SoundRound,
 } from '../arcade'
+import { accuracyLabel, fetchStats, reportAnswer } from '../stats'
+import type { QuestionStat } from '../stats'
 import { EntrySprite } from './EntrySprite'
 import type { Difficulty } from '../types'
 
@@ -72,6 +74,8 @@ export function ArcadeGame({ view, difficulty, onExit }: ArcadeGameProps) {
   const [streak, setStreak] = useState(0)
   const [best, setBest] = useState(0)
   const [correctCount, setCorrectCount] = useState(0)
+  /** 每日挑战当前题的全球正确率（聚合值，拿不到则为 undefined，不渲染） */
+  const [dailyStat, setDailyStat] = useState<QuestionStat | undefined>(undefined)
 
   // Hook 位置纪律：所有 Hook 必须写在任何条件早退之前
   const audioRef = useRef<HTMLAudioElement | null>(null)
@@ -105,6 +109,9 @@ export function ArcadeGame({ view, difficulty, onExit }: ArcadeGameProps) {
 
   /** 每日挑战的当前题 */
   const dailyItem = isDaily ? dailySet[(round - 1) % Math.max(1, dailySet.length)] : null
+
+  /** 每日挑战每道题的稳定 id（按日期 + 玩法类型），用于全球正确率聚合 */
+  const dailyId = isDaily && dailyItem ? `daily:${dailyKey()}:${dailyItem.kind}` : null
 
   /** 当前题的四个选项（不同玩法来源不同） */
   const options: string[] = useMemo(() => {
@@ -184,9 +191,25 @@ export function ArcadeGame({ view, difficulty, onExit }: ArcadeGameProps) {
     setPicked(null)
   }, [view, difficulty])
 
+  // 每日挑战：拉取当前题的全球正确率。拿不到就保持 undefined（不渲染那一行），
+  // 答题本身照常，统计只是增强项。竞态保护同 QuizGame。
+  useEffect(() => {
+    if (!isDaily || !dailyId) return
+    let cancelled = false
+    void fetchStats([dailyId]).then((map) => {
+      if (!cancelled) setDailyStat(map.get(dailyId))
+    })
+    return () => { cancelled = true }
+  }, [isDaily, dailyId])
+
   const choose = (index: number) => {
     if (answered) return
     setPicked(index)
+    // 每日挑战：把这次作答记进全球正确率（其他玩法每题都是随机抽的，
+    // 按题聚合没有意义；只有每日挑战固定同一天同一套，聚合才有可比性）
+    if (isDaily && dailyId) {
+      setDailyStat(reportAnswer(dailyId, index === answerIndex) ?? dailyStat)
+    }
     if (index === answerIndex) {
       const next = streak + 1
       setStreak(next)
@@ -420,16 +443,21 @@ export function ArcadeGame({ view, difficulty, onExit }: ArcadeGameProps) {
         </AnimatePresence>
 
         {answered && (
-          <div className="arcade-actions">
-            <button type="button" onClick={nextRound}>
-              <ArrowClockwise /> 下一题
-            </button>
-            {view === 'sound' && (
-              <button type="button" onClick={playSound}>
-                <SpeakerHigh /> 再听一次
+          <>
+            <div className="arcade-actions">
+              <button type="button" onClick={nextRound}>
+                <ArrowClockwise /> 下一题
               </button>
+              {view === 'sound' && (
+                <button type="button" onClick={playSound}>
+                  <SpeakerHigh /> 再听一次
+                </button>
+              )}
+            </div>
+            {isDaily && accuracyLabel(dailyStat) && (
+              <p className="arcade-daily-stat">{accuracyLabel(dailyStat)}</p>
             )}
-          </div>
+          </>
         )}
       </div>
 

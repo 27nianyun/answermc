@@ -1,0 +1,17 @@
+# Cloudflare Pages 项目配置。
+#
+# 这里唯一的作用是声明 D1 绑定：Pages Functions 通过 env.answermc_stats
+# 访问数据库，而绑定既不写在代码里、也不能通过 wrangler pages deploy 的命令行参数传，
+# 只能靠这份配置（或 Dashboard 手动配）。
+#
+# 注意：构建命令不要用 npm run build —— generate-sprites.mjs 硬依赖本地
+# .cache/jar（被 gitignore），在 Cloudflare 上会直接退出。
+# 数据产物都已入库，所以构建只需 npx tsc -b && npx vite build。
+
+name = "answermc"
+compatibility_date = "2026-10-05"
+
+[[d1_databases]]
+binding = "answermc_stats"
+database_name = "answermc-stats"
+database_id = "784b7cf9-f19e-4926-9271-589ff4a3771a"

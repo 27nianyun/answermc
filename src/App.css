@@ -3658,6 +3658,19 @@ a.quiz-tag:hover { border-color: var(--accent); color: var(--accent-deep); }
   line-height: 1.6;
 }
 
+.arcade-daily-stat {
+  margin: 12px 0 0;
+  padding: 6px 12px;
+  border: 1px solid color-mix(in oklab, var(--accent) 35%, transparent);
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--accent) 10%, transparent);
+  color: var(--ink);
+  font-family: ui-monospace, "Cascadia Code", monospace;
+  font-size: 11px;
+  line-height: 1.5;
+  align-self: flex-start;
+}
+
 .arcade-meter {
   display: flex;
   align-items: center;

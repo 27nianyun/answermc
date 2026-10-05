@@ -46,6 +46,8 @@ import {
 } from '../quiz'
 import type { AssistLevel, ExamAnswer, ExamLength, ExamResult } from '../quiz'
 import { lightUp, markWrong, readKnowledge, resolveFacetKey } from '../knowledge'
+import { accuracyLabel, fetchStats, reportAnswer } from '../stats'
+import type { QuestionStat } from '../stats'
 import type { Difficulty, GameMode, PlayerStats, QuizQuestion } from '../types'
 
 const SOURCE_ICON = {
@@ -450,6 +452,22 @@ export function QuizGame({
     return anyBroken ? resolved.map(() => null) : resolved
   }, [question, brokenSprites])
 
+  /*
+  全球正确率：只是一项增强，拿不到就不显示，答题本身照常。
+  位置纪律同其他 Hook —— 写在所有条件返回之前。
+  */
+  const [questionStat, setQuestionStat] = useState<QuestionStat | undefined>(undefined)
+
+  useEffect(() => {
+    if (!question) return
+    // 竞态保护：快速连点换题时，先发的请求可能后返回，会把旧题的统计盖到新题上
+    let cancelled = false
+    void fetchStats([question.id]).then((map) => {
+      if (!cancelled) setQuestionStat(map.get(question.id))
+    })
+    return () => { cancelled = true }
+  }, [question?.id])
+
   /**
    * 键盘答题：A/B/C/D 或 1/2/3/4 直接选，Enter / 空格出下一题。
    *
@@ -576,6 +594,8 @@ export function QuizGame({
     if (isExam && running) {
       setPicked(index)
       const correct = index === answerIndex
+      // 统计上报：考试不显示即时对错，正确率只在交卷后的回顾里看，但数据照样记
+      setQuestionStat(reportAnswer(question.id, correct) ?? questionStat)
       // 分数必须用 commitExamAnswer 算出来的那个 points（难度系数 × 时间系数），
       // 不能写死 60 —— 否则侧栏累计分和成绩单总分对不上。
       const record = commitExamAnswer(index)
@@ -591,6 +611,9 @@ export function QuizGame({
     }
 
     setPicked(index)
+    // 上报这次作答，并把乐观累加后的统计直接落到 state —— 玩家立刻看到
+    // 包含自己这一票的正确率，不用等下一轮网络查询
+    setQuestionStat(reportAnswer(question.id, index === answerIndex) ?? questionStat)
     if (index === answerIndex) {
       const points = quizScore(level, question, hints, attempts)
       setStatus('correct')
@@ -1078,6 +1101,14 @@ export function QuizGame({
             </div>
             <div className="quiz-explain-tags">
               <span className="quiz-tag">版本 {badge.join(' · ')}</span>
+              {/*
+                全球正确率。样本不足 5 次或统计服务不可用时 accuracyLabel 返回 null，
+                这时整块不渲染 —— 宁可不显示，也不显示「全球 0% 的人答对」这种
+                把「没人答过」误读成「特别难」的数字。
+              */}
+              {accuracyLabel(questionStat) && (
+                <span className="quiz-tag quiz-tag-stat">{accuracyLabel(questionStat)}</span>
+              )}
               <a className="quiz-tag" href={QUIZ_META.latestRelease ? `https://minecraft.wiki/w/Java_Edition_${QUIZ_META.latestRelease}` : undefined} target="_blank" rel="noreferrer noopener">
                 {QUIZ_META.edition} {QUIZ_META.latestRelease}
               </a>
