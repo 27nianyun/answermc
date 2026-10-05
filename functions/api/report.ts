@@ -59,3 +59,18 @@ export async function onRequestPost(context: {
 
   return new Response(JSON.stringify({ ok: true }), { headers })
 }
+
+/**
+ * 跨域预检一律拒绝。
+ *
+ * 前端与 /api 同域（Pages Functions），同源请求根本不会发 OPTIONS 预检，
+ * 所以正常答题永远不会走到这里。
+ *
+ * 第三方网站若想替用户给计数器灌水，浏览器会先发 OPTIONS 预检；这里**不返回**
+ * Access-Control-Allow-Methods / Allow-Headers（也不返回 Allow-Origin），
+ * 预检判定失败，真实的 POST 不会发出 —— 跨站写入在浏览器侧就被拦死。
+ * 不返回任何 CORS 头，连「看似放行」的假象都不留。
+ */
+export async function onRequestOptions(): Promise<Response> {
+  return new Response(null, { status: 204 })
+}
