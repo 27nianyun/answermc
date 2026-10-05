@@ -1,0 +1,22 @@
+# Cloudflare Pages 响应头配置
+#
+# 只给 /assets/ 加 immutable：Vite 打包出的 js/css 文件名带内容哈希
+# （如 index-DGQO09EC.js），内容一变文件名就变，可以永久缓存。
+#
+# 而 public/ 下的 sprites 与 sounds 是原样拷贝、文件名不带哈希，
+# 以后换素材时文件名不变 —— 缓存太久玩家会一直看到旧贴图，所以只给 7 天。
+#
+# 注意：_headers 只认 # 注释，写 /* */ 会被当成路径规则。
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/sprites/*
+  Cache-Control: public, max-age=604800
+
+/sounds/*
+  Cache-Control: public, max-age=604800
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
